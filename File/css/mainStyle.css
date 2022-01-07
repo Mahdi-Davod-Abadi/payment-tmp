@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "fotVazir";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../Font/vazir/vazir.eot");
+  src: url("../../Font/vazir/vazir.eot#iefix") format("embedded-opentype"), url("../../Font/vazir/vazir.woff2") format("woff2"), url("../../Font/vazir/vazir.woff") format("woff"), url("../../Font/vazir/vazir.ttf.ttf") format("truetype"), url("../../Font/vazir/vazir.svg.svg") format("svg"); }
+
+@font-face {
+  font-family: "fotShabnam";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../Font/shabnam/shabnam.eot");
+  src: url("../../Font/shabnam/shabnam.eot#iefix") format("embedded-opentype"), url("../../Font/shabnam/shabnam.woff2") format("woff2"), url("../../Font/shabnam/shabnam.woff") format("woff"), url("../../Font/shabnam/shabnam.ttf.ttf") format("truetype"), url("../../Font/shabnam/shabnam.svg.svg") format("svg"); }
+
+@font-face {
+  font-family: "fotYekan";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../Font/yekan/yekan.eot");
+  src: url("../../Font/yekan/yekan.eot#iefix") format("embedded-opentype"), url("../../Font/yekan/yekan.woff2") format("woff2"), url("../../Font/yekan/yekan.woff") format("woff"), url("../../Font/yekan/yekan.ttf.ttf") format("truetype"), url("../../Font/yekan/yekan.svg.svg") format("svg"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "fotVazir"; }
+
+/* social container */
+.social-container {
+  max-width: 100%;
+  background: #353b48; }
+  .social-container ul {
+    display: flex;
+    justify-content: center; }
+    .social-container ul li {
+      padding: 0.3rem 0.3rem;
+      font-size: 18px;
+      list-style-type: none; }
+      .social-container ul li a {
+        text-decoration: none;
+        color: #ecf0f1; }
+        .social-container ul li a :hover {
+          color: #f1c40f;
+          transition: all .4s ease-in; }
+
+/* end social container */
+/* start nav */
+nav {
+  max-width: 100%;
+  border-radius: .9rem; }
+  nav .nav-link {
+    margin-top: .5rem;
+    font-size: 18px; }
+
+/* end start nav */
+/* form credit card */
+#crdCha .btn {
+  background: #ecf0f1;
+  margin: 0.3rem;
+  border-radius: 0.3rem; }
+
+#crdCha .btnActive {
+  background: #3498db;
+  color: #fff;
+  transition: .3s all ease-in; }
+
+/* end form credit card */
+/* connection form */
+.form-box {
+  max-width: 100%;
+  border-radius: 0.7rem; }
+  .form-box .boxCon {
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.5rem; }
+  .form-box label {
+    color: #fff;
+    font-family: "fotShabnam"; }
+
+/* end connection form */
+/* footer */
+footer {
+  max-width: 100%;
+  background: #353b48;
+  color: #fff;
+  padding: 0.7rem; }
+  footer .end-footer {
+    text-align: center;
+    margin-top: 1.2rem; }
+  footer h3 {
+    margin-top: 0.4rem;
+    font-family: "fotShabnam"; }
+  footer ul li {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0.8rem 0.9rem;
+    font-size: 22px; }
+    footer ul li a {
+      background: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.2rem;
+      padding: 1rem; }
+      footer ul li a:hover {
+        color: #ecf0f1;
+        transition: 0.3s ease-in-out all;
+        transform: scale(0.94); }
+  footer .nmad-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 0.4rem; }
+
+/* end footer */
+/* frm concat */
+.FormControlItem {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative; }
+
+.FormControlItem label {
+  display: block; }
+
+.FormControlItem input {
+  border-radius: 0.5rem;
+  border: 3px solid #34495e; }
+
+.FormControlItem textarea {
+  border-radius: 0.5rem;
+  border: 3px solid #34495e; }
+
+.FormControlItem.error input {
+  border-color: #e74c3c; }
+
+.FormControlItem.error textarea {
+  border-color: #e74c3c; }
+
+.FormControlItem.success input {
+  border-color: #1abc9c; }
+
+.FormControlItem small {
+  color: #f1c40f;
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  right: 0; }
+
+.FormControlItem.error small {
+  visibility: visible; }
+
+/* end frm concat */
+/* payment form */
+.PaymentForm {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative; }
+
+.PaymentForm label {
+  display: block; }
+
+.PaymentForm input {
+  border: 1px solid #34495e;
+  border-radius: 0.5rem; }
+
+.PaymentForm.error input {
+  border-color: #e74c3c; }
+
+.PaymentForm.success input {
+  border-color: #1abc9c; }
+
+.PaymentForm small {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  right: 0;
+  color: #e74c3c; }
+
+.PaymentForm.error small {
+  visibility: visible; }
+
+/* end payment form */
+/* strat profile modal */
+.closePro {
+  background: transparent;
+  padding: 0.3rem;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #34495e; }
+  .closePro:hover {
+    color: #e74c3c;
+    transition: 0.3s ease-in; }
+
+.modal-body input {
+  padding: 0.4rem; }
+
+.modal-body label {
+  margin-bottom: 0.7rem;
+  font-family: "fotShabnam";
+  font-weight: bold; }
+
+.modal-body button {
+  margin-top: 0.7rem; }
+
+/* end profile modal */
+/* frm charge sell */
+.chargeForm {
+  margin-bottom: .8rem;
+  padding-bottom: 1.2rem;
+  position: relative; }
+
+.chargeForm input {
+  border: 2px solid #636e72;
+  border-radius: 0.4rem; }
+
+.chargeForm.Error input {
+  border-color: #e74c3c; }
+
+.chargeForm.Success input {
+  border-color: #1abc9c; }
+
+.chargeForm label {
+  display: block;
+  margin-bottom: 00.6rem; }
+
+.chargeForm small {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  right: 0;
+  color: #e74c3c; }
+
+.chargeForm.Error small {
+  visibility: visible; }
+
+/* end frm charge sell */

@@ -1,0 +1,282 @@
+
+@import 'colors';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $vazir;
+}
+
+/* social container */
+.social-container {
+    max-width: 100%;
+    background: $color_black;
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+           padding: 0.3rem 0.3rem;
+           font-size: 18px;
+           list-style-type: none;
+           a {
+               text-decoration: none;
+               color: $color_light;
+               :hover {
+                   color: $color_yellow;
+                   transition: all .4s ease-in;
+               }
+           }
+        }
+    }
+}
+/* end social container */
+
+/* start nav */
+nav {
+    max-width: 100%;
+    border-radius: .9rem;
+    .nav-link {
+        margin-top: .5rem;
+        font-size: 18px;
+    }
+}   
+/* end start nav */
+
+/* form credit card */
+ #crdCha {
+     .btn {
+         background: $color_light;
+         margin: 0.3rem;
+         border-radius: 0.3rem;
+     }
+     .btnActive {
+        background: $color_blue;
+        color: $color_white;
+        transition: .3s all ease-in;
+     }
+     
+ }
+/* end form credit card */
+
+/* connection form */
+ .form-box {
+     max-width: 100%;
+     
+     border-radius: 0.7rem;
+
+     .boxCon {
+         padding: 0.7rem 0.5rem;
+         border-radius: 0.5rem;
+     }
+
+     label {
+         color: $color_white;
+         font-family: $shabnam;
+     }
+ }
+/* end connection form */
+
+/* footer */
+ footer {
+     max-width: 100%;
+     background: $color_black;
+     color: $color_white;
+     padding: 0.7rem;
+
+     .end-footer {
+         text-align: center;
+         margin-top: 1.2rem;
+     }
+
+     
+
+     h3 {
+         margin-top: 0.4rem;
+         font-family: $shabnam;
+     }
+
+     ul li {
+         display: inline-flex;
+         list-style-type: none;
+         margin: 0.8rem 0.9rem;
+         font-size: 22px;
+         
+         a {
+             background: $color_blue;
+             color: $color_white;
+             text-decoration: none;
+             border-radius: 0.2rem;
+             padding: 1rem;
+
+             &:hover {
+                 color: $color_light;
+                 transition: 0.3s ease-in-out all;
+                 transform: scale(.94);
+             }
+         }
+     }
+
+     .nmad-icon {
+         width: 120px;
+         height: 120px;
+         border-radius: 0.4rem;
+     }
+ }
+/* end footer */
+
+/* frm concat */
+ .FormControlItem {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+ }
+ 
+ .FormControlItem label {
+     display: block;
+ }
+
+ .FormControlItem input {
+     border-radius: 0.5rem;
+     border: 3px solid $color_dark;
+ }
+
+ .FormControlItem textarea {
+    border-radius: 0.5rem;
+    border: 3px solid $color_dark;
+ }
+
+ .FormControlItem.error input {
+     border-color: $color_red;
+ }
+
+ .FormControlItem.error textarea {
+     border-color: $color_red;
+ }
+
+ .FormControlItem.success input {
+     border-color: $color_green;
+ }
+
+ .FormControlItem small {
+     color: $color_yellow;
+     position: absolute;
+     visibility: hidden;
+     bottom: 0;
+     right: 0;
+ }
+
+ .FormControlItem.error small {
+     visibility: visible;
+ }
+/* end frm concat */
+
+/* payment form */
+.PaymentForm {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.PaymentForm label {
+    display: block;
+}
+
+.PaymentForm input {
+    border: 1px solid $color_dark;
+    border-radius: 0.5rem;
+}
+
+.PaymentForm.error input {
+    border-color: $color_red;
+}
+
+.PaymentForm.success input {
+    border-color: $color_green;
+}
+
+.PaymentForm small {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    right: 0;
+    color: $color_red;
+}
+
+.PaymentForm.error small {
+    visibility: visible;
+}
+/* end payment form */
+
+/* strat profile modal */
+.closePro {
+    background: transparent;
+    padding: 0.3rem;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color_dark;
+    &:hover {
+        color: $color_red;
+        transition: 0.3s ease-in;
+    }
+}
+
+.modal-body input {
+   padding: 0.4rem;
+}
+
+.modal-body label {
+    margin-bottom: 0.7rem;
+    font-family: $shabnam;
+    font-weight: bold;
+}
+
+.modal-body button {
+    margin-top: 0.7rem;
+}
+/* end profile modal */
+
+/* frm charge sell */
+.chargeForm {
+    margin-bottom: .8rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+}
+
+.chargeForm input {
+    border: 2px solid $color_secondary;
+    border-radius: 0.4rem;
+}
+
+.chargeForm.Error input {
+    border-color: $color_red;
+}
+
+.chargeForm.Success input {
+    border-color: $color_green;
+}
+
+.chargeForm label {
+    display: block;
+    margin-bottom: 00.6rem;
+}
+
+.chargeForm small {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    right: 0;
+    color: $color_red;
+}
+
+.chargeForm.Error small {
+    visibility: visible;
+}
+/* end frm charge sell */

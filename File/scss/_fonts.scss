@@ -1,0 +1,39 @@
+$vazir: 'fotVazir';
+$yekan: 'fotYekan';
+$shabnam: 'fotShabnam';
+
+@font-face {
+    font-family: $vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../Font/vazir/vazir.eot');
+    src: url('../../Font/vazir/vazir.eot#iefix') format('embedded-opentype'),
+    url('../../Font/vazir/vazir.woff2') format('woff2'),
+    url('../../Font/vazir/vazir.woff') format('woff'),
+    url('../../Font/vazir/vazir.ttf.ttf') format('truetype'),
+    url('../../Font/vazir/vazir.svg.svg') format('svg');
+}
+
+@font-face {
+    font-family: $shabnam;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../Font/shabnam/shabnam.eot');
+    src: url('../../Font/shabnam/shabnam.eot#iefix') format('embedded-opentype'),
+    url('../../Font/shabnam/shabnam.woff2') format('woff2'),
+    url('../../Font/shabnam/shabnam.woff') format('woff'),
+    url('../../Font/shabnam/shabnam.ttf.ttf') format('truetype'),
+    url('../../Font/shabnam/shabnam.svg.svg') format('svg');
+}
+
+@font-face {
+    font-family: $yekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../Font/yekan/yekan.eot');
+    src: url('../../Font/yekan/yekan.eot#iefix') format('embedded-opentype'),
+    url('../../Font/yekan/yekan.woff2') format('woff2'),
+    url('../../Font/yekan/yekan.woff') format('woff'),
+    url('../../Font/yekan/yekan.ttf.ttf') format('truetype'),
+    url('../../Font/yekan/yekan.svg.svg') format('svg');
+}

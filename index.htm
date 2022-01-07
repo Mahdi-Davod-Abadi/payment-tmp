@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>کاکتوس</title>
+      <link rel="icon" href="Favicon/cactus.png">
+      <link rel="stylesheet" href="File/bootstrab/bootstrap.rtl.min.css" type="text/css">
+      <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css">
+      <link rel="stylesheet" href="File/css/mainStyle.css" type="text/css">
+    </head>
+
+    <body>
+ 
+        <div class="social-container">
+          <div class="col-12 col-lg-12">  
+             <ul>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             </ul>
+          </div>
+        </div> 
+        
+        <!-- start nav -->
+         <nav class="navbar navbar-expand-md border m-4 navbar-light bg-light">
+            <div class="container">
+
+               <a href="" class="navbar-brand" >
+                 <img src="img/logo.png">
+               </a>
+
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavCollapse">
+                 <span class="navbar-toggler-icon"></span>
+               </button> 
+
+               <div class="collapse navbar-collapse" id="NavCollapse">
+                 <ul class="navbar-nav me-auto">
+                   
+                   <li class="nav-item">
+                    <a class="nav-link" href="#crdCha">شارژ اعتباری</a>
+                   </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link" href="#panelPayment">پرداخت</a>
+                   </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link" href="#frmConection">پشتیبانی</a>
+                   </li>
+                 </ul>
+                  <a href="#" class="nav-link link-pro" data-bs-target="#profileModal" data-bs-toggle="modal">
+                   <i class="fas fa-user" style="margin: 0 .2rem;"></i>
+                   پروفایل 
+                  </a>
+               </div>
+            </div>
+         </nav>
+        <!-- end start nav -->
+        
+        <!-- strat modal profile user -->
+           <div class="modal" id="profileModal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title">
+                           <i class="fas fa-user"></i>
+                           پروفایل کاربری
+                        </h5>
+                        <button type="button" class="close closePro" data-bs-dismiss="modal" aria-label="close">
+                           <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <form method="post">
+                           <div class="m-2">
+                              <label>نام کاربری :</label>
+                              <input type="text" class="form-control" placeholder="rezaYasi">
+                           </div>
+                           <div class="m-2">
+                              <label>کلمه عبور :</label>
+                              <input type="password" class="form-control" placeholder="*****">
+                           </div>
+                           <div class="m-2">
+                             <button type="button" class="btn btn-warning">وارد شوید !</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+              </div>
+           </div>
+        <!-- end modal profile user -->
+
+
+        <!-- start baner -->
+         <div class="container">
+           <div class="col-12">
+              <img src="img/ban.png" class="img-fluid">
+           </div>
+         </div>
+        <!-- end baner -->
+         
+        <!-- form Credit charge -->
+          <section class="container" id="crdCha">
+              <div class="col-12">
+                 <div class="card border">
+                   <div class="card-title">
+                      <div class="btn-group d-flex justify-content-center flex-lg-row flex-md-column">
+                         <button class="btn btnCharg  btn-light btnActive" type="button" onclick="button_currect(1)">ایرانسل</button>
+                         <button class="btn btnCharg  btn-light" onclick="button_currect(2)" type="button">همراه اول</button>
+                         <button class="btn btnCharg  btn-light" onclick="button_currect(3)" type="button">رایتل</button>
+                      </div>
+                   </div>
+                   <div class="card-body">
+                      <div class="row">
+                      <div class="col-12 col-md-6 col-lg-6">
+                          <form id="ChargeFrm" method="post">
+
+                             <div class="chargeForm">
+                                <label>شماره تلفن همراه</label>
+                                <input class="form-control" type="tel" placeholder="+98" id="PhoneInput">
+                                <small></small>
+                             </div>
+
+                             <div class="chargeForm">
+                              <label>مبلغ شارژ</label>
+                              <input class="form-control" type="text" placeholder="ریال" id="PriceInput">
+                              <small></small>
+                             </div>
+
+                             <div class="m-1 mt-2">
+                              <label class="mb-2">نوع شارژ</label>
+                              <div class="form-check">
+                                 <input class="form-check-input" name="chType" checked type="radio">
+                                 <label class="form-check-label">
+                                   شارژ عادی
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input class="form-check-input" name="chType" type="radio">
+                                 <label class="form-check-label">
+                                   شارژ ویژه
+                                 </label>
+                              </div>
+                             </div>
+                             <button class="btn btn-warning bg-warning" type="submit">پرداخت</button>
+                          </form>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-6">
+                         <div class="col-12 p-3">
+                            <div class="card">
+                                <div class="card-title text-center p-1">
+                                  <p>فاکتور نهایی</p>
+                                </div>
+                                <div class="card-body">
+                                  <div class="m-2 border-bottom">
+                                      <label>مستقیم به شماره:</label>
+                                      <p class="resNumber">
+                                         ----
+                                      </p> 
+                                  </div>
+                                  <div class="m-2 mt-3 border-bottom">
+                                    <label>مبلغ شارژ (با احتساب مالیات):</label>
+                                    <p class="chargReg">
+                                       ----
+                                    </p> 
+                                  </div>
+                                  
+                                  <div class="m-2 mt-3 border-bottom">
+                                    <label>شارژ انتخابی :</label>
+                                    <p class="text-primary" id="res_charg">
+                                       ایرانسل
+                                    </p> 
+                                  </div>
+
+                                   <div class="m-2 mt-3" >
+                                    <label>نوع سیم کارت :</label>
+                                    <div class="form-check mt-2">
+                                       <input type="radio" name="typeMci" checked class="form-check-input">
+                                       <label class="form-check-label">اعتباری</label>
+                                    </div> 
+                                    <div class="form-check mt-2">
+                                       <input type="radio" name="typeMci" class="form-check-input">
+                                       <label class="form-check-label">دائمی</label>
+                                    </div> 
+                                   </div>
+                                </div>
+                            </div>
+                         </div>
+                      </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+          </section>
+        <!-- end form Credit charge -->
+        <br/>
+        <!-- start baner -->
+        <div class="container">
+         <div class="col-12">
+            <img src="img/ban-2.png" class="img-fluid">
+         </div>
+       </div>
+      <!-- end baner -->
+      <br>
+      <div class="container" id="panelPayment">
+          <div class="col-12">
+              <div class="card border">
+                 <div class="card-title text-center">
+                   <div class="bg-light col-12 p-2">مبلغ قابل پرداخت : 0</div>
+                   <div class="bg-light col-12 border-bottom p-2"> نوع قبض  : نامشخص </div>
+                 </div>
+                  <div class="card-body d-flex justify-content-center ">
+                      <div class="border p-3" style="width:80%">
+                        <form method="post" id="PaymntFrm">
+                          <div class="m-2 PaymentForm mt-2">
+                             <label class="form-label">شناسه قبض :</label>
+                             <input type="text" id="Billing-ID" class="form-control">
+                             <small></small>
+                          </div>
+                          <div class="m-2 PaymentForm mt-2">
+                           <label class="form-label">شناسه پرداخت :</label>
+                           <input type="text" id="Payment-code" class="form-control">
+                           <small></small>
+                          </div>
+                          <div class="m-2  mt-2">
+                            <button class="btn btn-warning bg-warning">پرداخت</button>
+                          </div>
+                        </form> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+       <br>
+      <section id="frmConection">
+           <div class="container">
+              <div class="col-12">
+                  <div class="form-box  d-flex justify-content-center ">
+                     <div class="col-lg-9 col-12 boxCon bg-dark">
+                      <form method="post" id="FrmConcat">
+
+                        <div class="FormControlItem">
+                           <label>نام :</label>
+                           <input type="text" class="form-control" id="username" placeholder="رضا ...">
+                           <small></small>
+                        </div> 
+
+                        <div class="FormControlItem">
+                           <label>ایمیل :</label>
+                           <input type="text" class="form-control" id="useremail" placeholder="rza14@gmail.com">
+                           <small></small>
+                        </div> 
+
+                        <div class="FormControlItem">
+                           <label>پیام :</label>
+                           <textarea class="form-control" id="usermsg" placeholder="تشکر میکنم از ..."></textarea>
+                           <small></small>
+                        </div> 
+
+                        <div class="m-1 mt-3">
+                            <button class="btn btn-warning" type="submit">ارسال پیام !</button>
+                        </div>
+
+                       </form> 
+                     </div>  
+                  </div>
+              </div>
+           </div>
+      </section> 
+      <br>
+      <!-- start footer --> 
+        <footer>
+           <div class="container border-bottom">
+              <div class="row">
+               <div class="col-lg-6 col-12">
+                  <h3>شبکه های اجتماعی</h3>
+                  <ul>
+                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+               </div>
+
+                <div class="col-lg-6 col-12">
+                  <h3>خدمات</h3>
+                  <p>
+                     معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و
+                      بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا
+                      صاحب کار خود نشان دهند که صفحه طراحی یا
+                      صفحه بندی شده بعد از اینکه متن در
+                      آن قرار گیرد چگونه به نظر می‌رسد
+                  </p>
+                  <h3>نمادها</h3>
+                  <div style="margin: 0.5rem 0.5rem;">
+                  <img src="img/namad.faed6c64.png" class="nmad-icon">
+                  <img src="img/namad1.fb8b777e.png" class="nmad-icon">
+                  </div>
+                </div>
+              </div>
+           </div>
+           <p class="end-footer">کلیه حقوق مرتبط با این سایت است</p>
+        </footer>
+      <!-- end footer --> 
+    </body>
+    <script src="File/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="File/js/javascriptMain.js" type="text/javascript"></script>
+</html>
+
